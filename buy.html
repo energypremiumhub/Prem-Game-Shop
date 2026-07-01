@@ -65,9 +65,10 @@
 
 <label>Payment Method</label><br><br>
 
-<select>
-<option>Wave Pay</option>
-<option>KBZ Pay</option>
+<select id="paymentMethod" onchange="showPayment()">
+    <option value="">-- Select Payment --</option>
+    <option value="wave">Wave Pay</option>
+    <option value="kpay">KBZPay</option>
 </select>
 
 <br><br>
