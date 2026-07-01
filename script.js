@@ -16,3 +16,36 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+function showPayment(){
+
+const payment=document.getElementById("paymentMethod").value;
+
+document.getElementById("waveInfo").style.display="none";
+document.getElementById("kpayInfo").style.display="none";
+
+if(payment==="wave"){
+document.getElementById("waveInfo").style.display="block";
+}
+
+if(payment==="kpay"){
+document.getElementById("kpayInfo").style.display="block";
+}
+
+}
+
+function copyWave(){
+
+navigator.clipboard.writeText("09682506493");
+
+alert("Wave Pay Number Copied!");
+
+}
+
+function copyKpay(){
+
+navigator.clipboard.writeText("09682506493");
+
+alert("KBZPay Number Copied!");
+
+}
