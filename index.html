@@ -1,80 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="my">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prem-Energy | Game Top Up</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Prem-Game Shop</title>
+    <style>
+        /* ဆိုဒ်တစ်ခုလုံးအတွက် အခြေခံပုံစံ */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background: #0b0e1a; color: #fff; padding: 20px; }
+        
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* ခေါင်းပိုင်း */
+        header { text-align: center; padding: 20px 0; border-bottom: 1px solid #1f2a3f; margin-bottom: 30px; }
+        header h1 { font-size: 2.5rem; color: #f5c842; }
+        header p { color: #8892b0; font-size: 1.1rem; }
+        
+        /* ပစ္စည်းအုပ်စု */
+        .section-title { font-size: 1.8rem; color: #f5c842; margin: 30px 0 20px; border-left: 5px solid #f5c842; padding-left: 15px; }
+        
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        
+        /* ပစ္စည်းကတ်ပြား */
+        .card { background: #141b2b; border-radius: 15px; padding: 20px; text-align: center; border: 1px solid #1f2a3f; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); border-color: #f5c842; box-shadow: 0 10px 25px rgba(245, 200, 66, 0.1); }
+        .card h3 { font-size: 1rem; margin-bottom: 5px; }
+        .card .price { font-size: 1.4rem; font-weight: bold; color: #f5c842; margin: 10px 0; }
+        .card .bonus { font-size: 0.85rem; color: #64ffda; }
+        .btn-buy { background: #f5c842; color: #0b0e1a; border: none; padding: 8px 20px; border-radius: 25px; font-weight: bold; cursor: pointer; transition: 0.3s; margin-top: 10px; }
+        .btn-buy:hover { background: #ffd966; transform: scale(1.05); }
+        
+        /* အောက်ခြေ */
+        footer { text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #1f2a3f; color: #8892b0; font-size: 0.9rem; }
+    </style>
 </head>
 <body>
+<div class="container">
 
-<header class="navbar">
+    <header>
+        <h1>⚡ Prem-Game Shop</h1>
+        <p>Mobile Legends Diamond Top Up &bull; Fast &amp; Trusted</p>
+    </header>
 
-<div class="logo">
-    ⚡ Prem-Energy
+    <!-- Bundles အုပ်စု -->
+    <h2 class="section-title">🎁 Bundles</h2>
+    <div class="product-grid">
+        <div class="card"><h3>Monthly Epic Bundle</h3><div class="bonus">275 + ★180</div><div class="price">17,200 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>Weekly Elite Bundle</h3><div class="bonus">55 + ★20</div><div class="price">3,350 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>Weekly Pass</h3><div class="price">6,500 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>11 Diamonds</h3><div class="price">1,000 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>22 Diamonds</h3><div class="price">1,750 Ks</div><button class="btn-buy">Buy Now</button></div>
+    </div>
+
+    <!-- Small Diamonds အုပ်စု -->
+    <h2 class="section-title">💎 Small Diamonds</h2>
+    <div class="product-grid">
+        <div class="card"><h3>33 Diamonds</h3><div class="price">2,500 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>44 Diamonds</h3><div class="price">3,300 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>56 Diamonds</h3><div class="price">4,000 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>86 Diamonds</h3><div class="price">5,500 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>112 Diamonds</h3><div class="price">7,800 Ks</div><button class="btn-buy">Buy Now</button></div>
+    </div>
+
+    <!-- Normal Diamonds အုပ်စု -->
+    <h2 class="section-title">💎 Normal Diamonds</h2>
+    <div class="product-grid">
+        <div class="card"><h3>172 Diamonds</h3><div class="price">10,700 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>257 Diamonds</h3><div class="price">15,900 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>343 Diamonds</h3><div class="price">21,100 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>429 Diamonds</h3><div class="price">26,600 Ks</div><button class="btn-buy">Buy Now</button></div>
+        <div class="card"><h3>514 Diamonds</h3><div class="price">31,200 Ks</div><button class="btn-buy">Buy Now</button></div>
+    </div>
+
+    <footer>
+        &copy; 2026 Prem-Game Shop. Made with ❤️ on GitHub.
+    </footer>
 </div>
-
-<nav class="menu">
-    <a href="index.html">Home</a>
-    <a href="packages.html">Top Up</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<h1>Fast & Trusted Game Top Up</h1>
-
-<p>
-Top up your favorite games instantly with the best prices.
-</p>
-
-<a href="packages.html" class="btn">
-Top Up Now
-</a>
-
-</section>
-
-<section class="games">
-
-<h2>Popular Games</h2>
-
-<div class="game-list">
-
-<div class="game-card">
-🎮
-<h3>Mobile Legends</h3>
-</div>
-
-<div class="game-card">
-🔥
-<h3>Free Fire</h3>
-</div>
-
-<div class="game-card">
-⚔️
-<h3>PUBG Mobile</h3>
-</div>
-
-</div>
-
-</section>
-
-<footer id="contact">
-
-<h3>Contact Us</h3>
-
-<p>Telegram : @PremEnergy</p>
-
-<p>Facebook : Prem-Energy</p>
-
-<p>© 2026 Prem-Energy</p>
-
-</footer>
-
-<script src="script.js"></script>
-
 </body>
-               </html>
+</html>
