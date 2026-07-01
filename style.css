@@ -86,3 +86,18 @@ nav a:hover{
 
 .game-card{
     background
+
+.game-card{
+    background:#161b22;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+    border:1px solid #222;
+}
+
+.game-card:hover{
+    transform:translateY(-5px);
+    border-color:#00bfff;
+}
